@@ -8,5 +8,24 @@ import { Component } from '@angular/core';
 export class AppComponent {
   serverElements = [{type: 'server', name: 'TestServer', content: 'This is a test server'}];
 
+onServerAdded() {
+  this.serverElements.push({
+    type: 'server',
+    name: this.newServerName,
+    content: this.newServerContent
+  })
+
+}
+
+onBluprintAdded() {
+  this.serverElements.push({
+    type: 'server',
+    name: this.newServerName,
+    content: this.newServerContent
+  })
+
+}
+
+
 
 }
